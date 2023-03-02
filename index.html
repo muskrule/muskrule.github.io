@@ -3,25 +3,17 @@
 		<title>
 			Give me your content
 		</title>
-		<script>
-				var count=0;
-				setInterval({
-					// Increment the count
-					count++;
-					// Update the title with the new count value
-					document.title = "Count:" + count;
-			        }, 1000);
-		</script>
 	</head>
 	<body>
 		<h1>Hey there!</h2>
 		<p id="myParagraph">Let me eat some data.</p>
 		<script>
-			setInterval(updateParagraph, 5000);
+			const newTitle = "My New Page Title";
 
-			function updateParagraph() {
-			  document.getElementById("myParagraph").textContent = "This text is updated automatically every 5 seconds.";
-			}
+			// Set an interval to modify the title every 5 seconds
+			setInterval(() => {
+			  document.title = newTitle;
+			}, 5000);
 		</script>
 	</body>
 </html>
